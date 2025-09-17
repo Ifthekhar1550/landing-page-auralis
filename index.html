@@ -12,72 +12,108 @@
 </head>
 
 
-<body class="bg-[#101010] min-h-screen  ">
+<body class="bg-[#101010] min-h-screen  overflow-auto">
   <div class="header-gradient "></div>
 
 
   <!-- HEader -->
-  <header class="max-w-6xl mx-auto flex justify-between items-center  py-8 px-2 ">
-    <!-- Brand -->
-    <div class="flex items-center space-x-2">
-      <img src="./src/assets/images/logo/68a4543869cc1d13ded3d4e2_Logo.svg" alt="Auralis Logo" class="h-6">
+  <header class="max-w-6xl mx-auto  z-20">
+    <div class="flex justify-between items-center  py-8 px-2"> 
+        <!-- Brand -->
+    <div class=" flex items-center space-x-2 z-50">
+      <img src="./src/assets/images/logo/68a4543869cc1d13ded3d4e2_Logo.svg" alt="Auralis Logo" class="h-6 md:h-8">
 
     </div>
 
     <!-- Nav Menu -->
     <nav
-      class="hidden md:flex items-center space-x-6 bg-gray-900/60 border border-gray-700 rounded-xl px-4 py-2 backdrop-blur-md">
-      <a href="#" class="px-3 py-1 rounded-lg hover:bg-emerald-500 text-white hover:text-black ">Home</a>
-      <a href="#" class="px-3 py-1 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">Pricing</a>
-      <a href="#" class="px-3 py-1 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">Blog</a>
-      <a href="#" class="px-3 py-1 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">FAQ</a>
+      class="hidden md:flex items-center space-x-2 bg-[#1e1e1eb3] border border-[#ffffff26] rounded-xl px-4 py-2 backdrop-blur-md">
+      <a href="#" class="px-3 py-1 rounded-lg hover:bg-[#1ee19b] text-white hover:text-black ">Home</a>
+      <a href="#" class="px-3 py-1 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">Pricing</a>
+      <a href="#" class="px-3 py-1 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">Blog</a>
+      <a href="#" class="px-3 py-1 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">FAQ</a>
 
       <!-- Dropdown -->
       <div class="relative group">
         <button id="dropdown-btn"
-          class="flex items-center space-x-1  px-3 py-1 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">
+          class="flex items-center space-x-1  px-3 py-1 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">
           <span>Other</span>
-      <i class="fa-solid fa-chevron-down"></i>
+      <i class="fa-solid fa-chevron-down ml-2 text-xs"></i>
         </button>
         <div id="dropdown-menu"
           class="absolute hidden left-2 mt-3 w-40 bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-2">
           <a href="#"
-            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">Contact</a>
+            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">Contact</a>
           <a href="#"
-            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">Blog
+            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">Blog
             Details</a>
           <a href="#"
-            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition rounded-b-lg">Blog
+            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition rounded-b-lg">Blog
             Category</a>
 
           <a href="#"
-            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition rounded-b-lg">404</a>
+            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition rounded-b-lg">404</a>
           <a href="#"
-            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">Changelog</a>
+            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">Changelog</a>
           <a href="#"
-            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">Licences</a>
+            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">Licences</a>
           <a href="#"
-            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-emerald-500 transition">styleguide</a>
+            class="block px-4 py-2 rounded-lg hover:text-black text-white hover:bg-[#1ee19b] transition">styleguide</a>
         </div>
       </div>
     </nav>
-    <!-- mobile nav -->
-    <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-
-
+  
 
     <!-- Get staryted -->
-    <a href="#" class="hidden md:block bg-emerald-500 hover:bg-emerald-400 text-black font-medium px-5 py-2 rounded-xl shadow">
+    <a href="#" class="hidden md:block bg-[#1ee19b] hover:bg-emerald-400 text-black font-medium px-5 py-2 rounded-xl shadow">
       Get Started
-    </a>
+    </a></div>
+ 
+<!-- moble nav button -->
+<div class="md:hidden flex items-center justify-between w-full mx-auto pb-2">
+  
+   <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white z-50 absolute top-8 right-2">
+      <i id="menu-icon" class="fa-solid fa-bars text-xl transition-all duration-300"></i>
+   </button></div>
+</div>
+
+<!-- mobike nav -->
+<div id="mobile-menu" class="w-11/12 md:hidden absolute top-20 left-0 h-2/3] bg-[#1e1e1e]  transform -translate-y-full transition-transform duration-300 ease-in-out z-10 overflow-auto opacity-0 rounded-2xl border border-[#404040] mx-2">
+    <div class="flex flex-col h-full">
+   
+        
+        <div class="flex-1 px-6 py-4 space-y-2">
+            <a href="#" class="block px-6 py-2 rounded-xl bg-emerald-400 text-black font-medium text-sm">Home</a>
+            <a href="#" class="block px-6 py-2 rounded-xl hover:bg-emerald-400 text-white transition text-sm">Pricing</a>
+            <a href="#" class="block px-6 py-2 rounded-xl hover:bg-emerald-400 text-white transition text-sm">Blog</a>
+            <a href="#" class="block px-6 py-2 rounded-xl hover:bg-emerald-400 text-white transition text-sm">FAQ</a>
+     
+            <div class="pt-2 mt-2">
+                <button id="mobile-dropdown-btn" class="flex items-center justify-between w-full px-6 py-4 rounded-xl hover:bg-gray-800 text-white transition text-sm">
+                    <span>Other</span>
+                    <i id="mobile-dropdown-arrow" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                
+                <div id="mobile-dropdown-menu" class="hidden mt-2 space-y-1p-2 border-t border-[#404040] m-4 ">
+                    <a href="#" class="block px-6 py-2 rounded-lg hover:bg-emerald-400 text-white transition">Contact</a>
+                    <a href="#" class="block px-6 py-2 rounded-lg hover:bg-emerald-400 text-white transition">Blog Details</a>
+                    <a href="#" class="block px-6 py-2 rounded-lg hover:bg-emerald-400 text-white transition">Blog Category</a>
+                    <a href="#" class="block px-6 py-2 rounded-lg hover:bg-emerald-400 text-white transition">404</a>
+                    <a href="#" class="block px-6 py-2 rounded-lg hover:bg-emerald-400 text-white transition">Changelog</a>
+                    <a href="#" class="block px-6 py-2 rounded-lg hover:bg-emerald-400 text-white transition">Licenses</a>
+                    <a href="#" class="block px-6 py-2 rounded-lg hover:bg-emerald-400 text-white transition">Styleguide</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
   </header>
   <main class="">
     <!-- hero -->
     <section class=" flex flex-col items-center justify-center text-center px-6 py-24 max-w-6xl mx-auto ">
  
-      <h1 class="text-4xl md:text-6xl font-bold leading-tight text-white max-w-4xl">
+      <h1 class="text-4xl md:text-6xl font-medium leading-tight text-white max-w-4xl">
         Transform your products<br />
         photos into <span class="text-emerald-400">stunning visuals.</span>
       </h1>
@@ -88,13 +124,13 @@
       </p>
 
       <!-- hero buttion -->
-      <div class="mt-10 flex gap-4">
+      <div class="mt-10 flex gap-4 items-center justify-center">
         <a href="#"
-          class="bg-emerald-500 hover:bg-emerald-400 text-black font-medium px-6 py-3 rounded-xl shadow-md transition translate-y-0.5 hover:translate-y-0">
+          class="bg-[#1ee19b] hover:bg-emerald-400 text-black font-medium text-sm md:text-base lg:px-6 lg:py-3 p-2 rounded-xl ">
           Get Started
         </a>
         <a href="#"
-          class="border border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-black font-medium px-6 py-3 rounded-xl transition">
+          class="border border-emerald-400 text-emerald-400 hover:bg-emerald-400 text-sm md:text-base hover:text-black font-medium lg:px-6 lg:py-3 p-2  rounded-xl ">
           Learn More
         </a>
       </div>
@@ -103,65 +139,122 @@
     </section>
 
     <!-- product -->
-    <section class="px-6 py-16 w-full max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 ">
- 
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 1"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
+<section class=" py-16  relative mx-auto max-w-fit">
+      <div class="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#101010] to-transparent z-10"></div>
+  <div class="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#101010] to-transparent z-10"></div>
+    <!-- 1st row -->
+    <div class=" mb-4 overflow-hidden">
+        <div class="flex space-x-2 md:space-x-4 scroll-left">
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 1"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-brandandpalms-768975.jpg" alt="Product 2"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 3"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 4"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 1"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-brandandpalms-768975.jpg" alt="Product 2"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 3"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 4"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
         </div>
+    </div>
 
-        
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-brandandpalms-768975.jpg" alt="Product 2"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
+    <!-- 2nd row -->
+    <div class=" overflow-hidden">
+        <div class="flex space-x-4 scroll-right">
+         
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" alt="Product 5"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 6"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 7"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 8"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            
+
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" alt="Product 5"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 6"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 7"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex-shrink-0 w-28 md:w-64 overflow-hidden rounded-2xl shadow-lg">
+                <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 8"
+                    class="w-full h-28 md:h-64 object-cover hover:scale-105 transition-transform duration-300">
+            </div>
         </div>
-
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 3"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 4"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-       
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" alt="Product 5"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 6"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 7"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-     
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 8"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-      </div>
-    </section>
+    </div>
+    
+</section>
     <!-- brand -->
-    <section class=" py-12 max-w-6xl mx-auto">
-      <!-- Text -->
+    <section class="overflow-hidden py-16 max-w-6xl mx-auto relative">
+
       <p class="text-center text-lg md:text-xl text-gray-300">
         Over <span class="text-emerald-400 font-semibold">20,000,000</span> product images generated by brands
         worldwide.
       </p>
 
-      <!-- Logo Row -->
-      <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
+      <div class="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#101010] to-transparent z-10"></div>
+  <div class="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#101010] to-transparent z-10"></div>
+      <div class= " scroll-left flex  justify-center items-center gap-10 my-16">
         <!-- Brand Logo 1 -->
+        <img src="./src/assets/images/brand/68a0dd67a72ed147463e0653_Brands Logo 03.svg" alt="brand"
+          class="h-10 hover:scale-105 transition duration-300">
+
+        <!-- Brand Logo 2 -->
+        <img src="./src/assets/images/brand/68a0e007d76c4ad323a90989_Brands Logo 04.svg" alt="brand"
+          class="h-10 hover:scale-105 transition duration-300">
+
+        <!-- Brand Logo 3 -->
+        <img src="./src/assets/images/brand/68a1ad39dafd6cd106a837ac_Brands logo 02.svg" alt="brand"
+          class="h-10 hover:scale-105 transition duration-300">
+
+        <!-- Brand Logo 4 -->
+        <img src="./src/assets/images/brand/68a1b1d5eaa832d6e6542eca_Brands logo 05.svg" alt="brand"
+          class="h-10 hover:scale-105 transition duration-300">
+
+        <!-- Brand Logo 5 -->
+        <img src="./src/assets/images/brand/68a1b407cff662105c0513af_Brands logo 01.svg" alt="brand"
+          class="h-10  hover:scale-105 transition duration-300">
+
+           <!-- Brand Logo 1 -->
         <img src="./src/assets/images/brand/68a0dd67a72ed147463e0653_Brands Logo 03.svg" alt="brand"
           class="h-10 hover:scale-105 transition duration-300">
 
@@ -184,38 +277,42 @@
     </section>
 
     <!-- how it works -->
-    <section class="bg-[#1e1e1e] text-white py-20 px-8  rounded-4xl">
+    <section class="bg-[#1e1e1e] text-white py-20 px-4 md:px-8  rounded-4xl">
       <div class="  grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         <!-- Left Col  -->
         <div class="">
-          <p class="text-primary uppercase tracking-wide mb-10 text-sm font-semibold">
-            How it work
+          <p class="text-emerald-400 mb-10 text-sm font-semibold">
+            HOW IT WORK
           </p>
-          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Generate your product photo <span class="text-primary">in seconds.</span>
+          <h2 class="text-4xl md:text-5xl font-normal leading-tight mb-6">
+            Generate your product photo <span class="text-emerald-400">in seconds.</span>
           </h2>
-          <p class="text-gray-400 mb-8 max-w-lg">
+    
+
+        </div>
+        <div >
+                <p class="text-gray-400 mb-8 max-w-lg">
             Just upload your product, select a scene, and watch our AI instantly create
             stunning visuals for your brand, ads, or social posts.
           </p>
-
-        </div>
-        <div class="flex gap-4">
-          <button
-            class="border border-emerald-400 text-emerald-400 font-semibold px-6 py-3 rounded-md bg-transparent hover:bg-emerald-400 hover:text-black transition">
+          <div class="flex flex-col md:flex-row gap-4">
+                <button
+            class="w-2/3 border border-emerald-400 text-emerald-400 font-semibold p-2 md:px-6 md:py-3 rounded-xl bg-transparent hover:bg-emerald-400 hover:text-black transition">
             Try It Now
           </button>
           <button
-            class="border border-emerald-400 text-emerald-400 font-semibold  px-6 py-3 rounded-md bg-transparent hover:bg-emerald-400  hover:text-black transition">
+            class= " w-2/3 border border-emerald-400 text-emerald-400 font-semibold p-2 md:px-6 md:py-3  px-6 py-3 rounded-xl bg-transparent hover:bg-emerald-400  hover:text-black transition">
             See Examples
           </button>
+          </div>
+      
         </div>
       </div>
       <!-- step 01 -->
       <div class=" mt-20 grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         <div class="max-w-2xl">
           <h3 class="text-5xl font-bold text-emerald-400 mb-4">01</h3>
-          <h4 class="text-2xl font-semibold mb-4">Upload your product photo</h4>
+          <h4 class="text-2xl font-normal mb-4">Upload your product photo</h4>
           <p class="text-gray-400 max-w-xl">
             Take a clean photo of your product using your phone or camera on any background.
             Upload it to the tool, and our AI will detect and isolate the product automatically.
@@ -236,7 +333,7 @@
       </div>
       <!-- step 02 -->
       <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-        <div class="bg-[#101010] rounded-2xl p-4 lg:p-12 grid grid-cols-3 items-center shadow-lg gap-4 border-gray-700 border">
+        <div class="bg-[#101010] rounded-2xl p-4 lg:p-12 grid grid-cols-3 items-center shadow-lg gap-4 border-gray-700 border order-2">
 
           <div class="w-full max-w-xs flex flex-col gap-4 items-center col-span-1">
             <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4041391.jpg " alt="Product Upload"
@@ -257,7 +354,7 @@
         <!-- Right Col  -->
         <div class="max-w-2xl">
           <h3 class="text-5xl font-bold text-emerald-400 mb-4">02</h3>
-          <h4 class="text-2xl font-semibold mb-4">Choose a style or scene</h4>
+          <h4 class="text-2xl font-normal mb-4">Choose a style or scene</h4>
           <p class="text-gray-400 max-w-xl">
             Select from a library of backgrounds minimalist studio, lifestyle, seasonal, or custom brand scenes. You can
             adjust lighting, angles, shadows, and even add props to match your aesthetic.
@@ -268,7 +365,7 @@
       <div class=" mt-20 grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         <div class="max-w-2xl">
           <h3 class="text-5xl font-bold text-emerald-400 mb-4">03</h3>
-          <h4 class="text-2xl font-semibold mb-4">Generate and download</h4>
+          <h4 class="text-2xl font-normal mb-4">Generate and download</h4>
           <p class="text-gray-400 max-w-xl">
             In seconds, our AI creates high-resolution images with your selected style. Preview, tweak if needed, and
             download your final shots ready to use on your store, social media, or ad campaigns.
@@ -293,10 +390,11 @@
 
   <!-- Features -->
   <section class="max-w-6xl mx-auto py-16 text-center text-white">
-  <h3 class="text-sm   text-emerald-400 font-medium">
+  <h3 class="text-sm   text-emerald-400 font-medium  ">
     FEATURES
   </h3>
-  <h2 class="mt-2 text-3xl md:text-4xl font-bold">
+  <h2 class="mt-2 text-2l md:text-4xl font-normal px-4 max-w-xl mx-auto">
+
     Packed with smart features that
     <span class="text-emerald-400">save you time.</span>
   </h2>
@@ -385,76 +483,836 @@
     <!-- Left side -->
     <div>
      
-      <h2 class="text-4xl md:text-5xl font-semibold leading-tight">
+      <h2 class="text-4xl md:text-5xl font-normal leading-tight">
         One solution for <span class="text-primary">every</span> product category.
       </h2>
     </div>
 
     <!-- Right side -->
     <div>
-      <p class="text-lg text-gray-300">
+      <p class="text-base text-gray-300">
         Our AI is designed to handle any product, in any category. From fashion to cosmetics, furniture to electronics, you can create stunning visuals that fit your brand and resonate with your audience.
       </p>
     </div>
   </div>
 
 
-  <!-- Tabs -->
-  <div class="mt-10 flex flex-wrap gap-4">
-    <button class="tab-btn active-tab ">Shoes</button>
-    <button class="tab-btn">Furniture</button>
-    <button class="tab-btn">Perfumes</button>
-    <button class="tab-btn">Jewelry</button>
-    <button class="tab-btn">Foods</button>
-    <button class="tab-btn">Bags</button>
-  </div>
 
-  <!-- Tab content -->
-  <div id="tab-content" class="mt-8 text-gray-300">
-   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+
+      <!-- Tabs -->
+        <div class="my-10 flex flex-wrap gap-4">
+            <button class="tab-btn active-tab" data-tab="shoes">Shoes</button>
+            <button class="tab-btn" data-tab="perfumes">Perfumes</button>
+            <button class="tab-btn" data-tab="furniture">Furniture</button>
+            
+            <button class="tab-btn" data-tab="jewelry">Jewelry</button>
+            <button class="tab-btn" data-tab="foods">Foods</button>
+            <button class="tab-btn" data-tab="bags">Bags</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="tab-content">
+            <!-- Shoes Tab -->
+            <div class="tab-content active mt-8 text-gray-300" data-content="shoes">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 1"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-brandandpalms-768975.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 4"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" alt="Product 5"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 6"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Perfumes Tab -->
+          
+            <div class="tab-content hidden mt-8 text-gray-300" data-content="perfumes">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4041391.jpg" alt="Product 1"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4938453.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-polina-kovaleva-8101532.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                         <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4041391.jpg" alt="Product 1"
+                            class="w-full lg:h-86 h-28 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4938453.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-polina-kovaleva-8101532.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+<!-- furniture tab -->
+   <div class="tab-content hidden mt-8 text-gray-300" data-content="furniture">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 1"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-brandandpalms-768975.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 4"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" alt="Product 5"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 6"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+            <!-- jwel Tab -->
+          
+            <div class="tab-content hidden mt-8 text-gray-300" data-content="jewelry">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4041391.jpg" alt="Product 1"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4938453.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-polina-kovaleva-8101532.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                         <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4041391.jpg" alt="Product 1"
+                            class="w-full lg:h-86 h-28 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4938453.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-polina-kovaleva-8101532.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Food Tab -->
+            <div class="tab-content hidden mt-8 text-gray-300" data-content="foods">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 1"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-brandandpalms-768975.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 4"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" alt="Product 5"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 6"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- bags Tab -->
+          
+            <div class="tab-content hidden mt-8 text-gray-300" data-content="bags">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4041391.jpg" alt="Product 1"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4938453.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-polina-kovaleva-8101532.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                         <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4041391.jpg" alt="Product 1"
+                            class="w-full lg:h-86 h-28 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-karolina-grabowska-4938453.jpg" alt="Product 2"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden w-28 lg:w-86 rounded-2xl shadow-lg">
+                        <img src="./src/assets/images/how it works/pexels-polina-kovaleva-8101532.jpg" alt="Product 3"
+                            class="w-full h-28 lg:h-86 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
   
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" alt="Product 1"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
- 
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-brandandpalms-768975.jpg" alt="Product 2"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-mota-701877.jpg" alt="Product 3"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 4"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
-      
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" alt="Product 5"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="overflow-hidden rounded-2xl shadow-lg">
-          <img src="./src/assets/images/product/pexels-nietjuhart-934064.jpg" alt="Product 6"
-            class="w-full h-86 object-cover hover:scale-105 transition-transform duration-300">
-        </div>
-
- 
-      </div>
-  </div>
 </section>
 
 
+<!-- pricing plan -->
+ <section class=" text-white px-8 py-20 max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+            <p class="text-[#1ee19b] text-sm font-semibold tracking-[0.2em] uppercase mb-6">PLANS</p>
+            <h1 class="text-4xl md:text-5xl font-normal leading-tight">
+                <span class="text-[#1ee19b]">Simple</span> pricing for every<br>
+                stage of growth.
+            </h1>
+            
+            <!-- pric tab -->
+            <div class="mt-10 inline-flex relative bg-[#1a1a1a] rounded-full px-4 py-1 border border-[#3a3a3a]">
+                <div id="toggleSlider" class="absolute bg-[#1ee19b] rounded-full transition-transform duration-300 ease-in-out z-0"></div>
+                <button id="monthlyBtn" class="relative z-10 px-8 py-2.5 text-sm font-medium rounded-full transition-colors duration-300 text-black">
+                    Monthly
+                </button>
+                <button id="yearlyBtn" class="relative z-10 px-8 py-2.5 text-sm font-medium rounded-full transition-colors duration-300 text-gray-400">
+                    Yearly
+                </button>
+            </div>
+        </div>
+
+        <!-- Price cards -->
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Basic -->
+            <div class="bg-[#1c1c1c] border border-[#3a3a3a] rounded-2xl p-3 hover:border-emerald-400 transition-all duration-300 hover:-translate-y-1">
+               <div class=" bg-[#181818] px-6 py-2 rounded-lg inline-block mb-6">
+         
+<h3 class="text-2xl font-semibold my-3">Basic Plan</h3>
+                <p class="text-gray-400 text-sm mb-4">For solo creators and small businesses starting out.</p>
+               </div> 
+                
+                <div class="mb-8">
+                    <span class="text-5xl font-bold">
+                        <span class="text-5xl align-top">$</span><span id="basicPrice">26</span>
+                    </span>
+                    <span class="text-gray-500 text-sm ml-2">/ <span class="text-[#6f6f6f]">Month</span></span>
+                </div>
+                
+                <button class="w-full py-3.5 px-6 border border-[#1ee19b] text-[#1ee19b] rounded-lg font-semibold text-sm hover:bg-[#1ee19b] hover:text-black transition-all duration-300 mb-8 hover:shadow-lg hover:shadow-[#1ee19b]/20">
+                    Get Started With Basic
+                </button>
+              <div class="border-t border-[#272727] mb-8"></div>  
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">50 images every month</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">50+ background themes</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">Background Removal</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">1 concurrent generation</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- pro -->
+            <div class="bg-[#1c1c1c] border border-[#3a3a3a] rounded-2xl p-3 hover:border-emerald-400 transition-all duration-300 hover:-translate-y-1 relative">
+                 <div class=" bg-gradient-to-br from-[#1ee19b] to-[#0d3b3bcc] px-6 py-2 rounded-lg inline-block mb-6">
+
+                <h3 class="text-2xl font-semibold mb-3 text-black">Pro Plan</h3>
+                <p class="text-black text-sm mb-8">For growing e-commerce brands needing more flexibility.</p>
+                 </div>
+                <div class="mb-8">
+                    <span class="text-5xl font-bold">
+                        <span class="text-5xl align-top">$</span><span id="proPrice">38</span>
+                    </span>
+                    <span class="text-gray-500 text-sm ml-2">/ <span class="text-[#6f6f6f]">Month</span></span>
+                </div>
+                
+                <button class="w-full py-3.5 px-6 bg-[#1ee19b] text-black rounded-lg font-semibold text-sm hover:bg-emerald-600 transition-all duration-300 mb-8 hover:shadow-lg hover:shadow-[#1ee19b]/30">
+                    Get Started With Pro
+                </button>
+                <div class="border-t border-[#272727] mb-8"></div>
+                <p class="text-gray-300 text-sm font-medium mb-3">Everything in Basic plus...</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">1,000 images every month</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">Create custom backgrounds</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">4 concurrent generation</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="bg-[#1c1c1c] border border-[#3a3a3a] rounded-2xl p-3 hover:border-emerald-400 transition-all duration-300 hover:-translate-y-1">
+                 <div class=" bg-[#181818] px-6 py-2 rounded-lg inline-block mb-6">
+              <h3 class="text-2xl font-semibold mb-3">Enterprise Plan</h3>
+                <p class="text-gray-400 text-sm mb-8">For agencies and enterprises with large-scale demands.</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-5xl font-bold">
+                        <span class="text-5xl align-top">$</span><span id="enterprisePrice">50</span>
+                    </span>
+                    <span class="text-gray-500 text-sm ml-2">/ <span class="text-[#6f6f6f]">Month</span></span>
+                </div>
+                
+                <button class="w-full py-3.5 px-6 border border-[#1ee19b] text-[#1ee19b] rounded-lg font-semibold text-sm hover:bg-[#1ee19b] hover:text-black transition-all duration-300 mb-8 hover:shadow-lg hover:shadow-[#1ee19b]/20">
+                    Get Started With Enterprise
+                </button>
+<div class="border-t border-[#272727] mb-8"></div>
+                
+                <p class="text-gray-300 text-sm font-medium mb-3 ">Everything in Pro plus...</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">Unlimited images</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">Unlimited storage</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check mt-1 mr-3 text-[#1ee19b]"></i>
+                        <span class="text-gray-300 text-sm">8 concurrent generation</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+     
+        <div class="mt-16 pt-8  flex flex-col md:flex-row  justify-center  items-center gap-6">
+            <a href="#" class="text-white hover:text-[#1ee19b] transition-colors duration-300 text-sm flex items-center gap-2">
+               <i class="fa-solid fa-shield"></i>
+                Stripe checkout
+            </a>
+            <a href="#" class="text-white hover:text-[#1ee19b] transition-colors duration-300 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-comment "></i>
+                Priority support
+            </a>
+            <a href="#" class="text-white hover:text-[#1ee19b] transition-colors duration-300 text-sm flex items-center gap-2">
+                <i class="fa-solid fa-face-smile "></i>
+                Cancel anytime
+            </a>
+        </div>
+       </div> 
+
+      <button class="block my-8 max-w-2xl mx-auto bg-[#1ee19b] hover:bg-emerald-600 transition-colors duration-300 px-4 py-2 rounded-xl text-black font-medium">Compare Plans</button>
+
+</section>
+
+<!-- testimonials -->
+
+<section class=" text-white  py-20  mx-auto bg-[#1e1e1e] rounded-t-2xl">
+ <div class="text-center mb-16 max-w-6xl mx-auto ">
+        <p class="text-emerald-400 text-sm font-medium tracking-wide uppercase mb-4">TESTIMONIALS</p>
+        <h2 class="text-4xl md:text-5xl font-normal text-white mb-4">
+            Trusted by thousands of<br>
+            <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">creative teams worldwide</span>
+        </h2>
+    </div>
+<!-- grid start -->
+
+    <div class="relative ">
+        <div id="testimonialsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-500 ease-in-out max-w-6xl mx-auto">
+         
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+   We needed something affordable but still high-quality, and this turned out perfect. The visuals impressed our investors and our customers alike. I recommend it to any startup trying to look professional.
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10  rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                      <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                        
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Jason Patel</p>
+                        <p class="text-gray-400 text-xs">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+                    This tool completely changed how we present our products online. In just minutes, we had visuals that looked like they were done by a professional designer. Our sales went up almost immediately after updating our site with these stunning images!
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                                       <img src="./src/assets/images/testimonials/pexels-gabby-k-6999225.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Rachel Donovann</p>
+                        <p class="text-gray-400 text-xs">E-commerce Store Owner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+     I’ve tried several tools before, but nothing came close to how fast and professional this one is. My product catalog looks like it was shot in a studio now!
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                                       <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Omar Farouk</p>
+                        <p class="text-gray-400 text-xs">Online Store Owner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+   We needed something affordable but still high-quality, and this turned out perfect. The visuals impressed our investors and our customers alike. I recommend it to any startup trying to look professional.
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10  rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                      <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                        
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Jason Patel</p>
+                        <p class="text-gray-400 text-xs">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+                    This tool completely changed how we present our products online. In just minutes, we had visuals that looked like they were done by a professional designer. Our sales went up almost immediately after updating our site with these stunning images!
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                                       <img src="./src/assets/images/testimonials/pexels-gabby-k-6999225.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Rachel Donovann</p>
+                        <p class="text-gray-400 text-xs">E-commerce Store Owner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+     I’ve tried several tools before, but nothing came close to how fast and professional this one is. My product catalog looks like it was shot in a studio now!
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                                       <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Omar Farouk</p>
+                        <p class="text-gray-400 text-xs">Online Store Owner</p>
+                    </div>
+                </div>
+            </div>
+             <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+   We needed something affordable but still high-quality, and this turned out perfect. The visuals impressed our investors and our customers alike. I recommend it to any startup trying to look professional.
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10  rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                      <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                        
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Jason Patel</p>
+                        <p class="text-gray-400 text-xs">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+                    This tool completely changed how we present our products online. In just minutes, we had visuals that looked like they were done by a professional designer. Our sales went up almost immediately after updating our site with these stunning images!
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                                       <img src="./src/assets/images/testimonials/pexels-gabby-k-6999225.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Rachel Donovann</p>
+                        <p class="text-gray-400 text-xs">E-commerce Store Owner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300">
+                <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+     I’ve tried several tools before, but nothing came close to how fast and professional this one is. My product catalog looks like it was shot in a studio now!
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                                       <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Omar Farouk</p>
+                        <p class="text-gray-400 text-xs">Online Store Owner</p>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="testimonial-card mx-4 hidden-row bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300 opacity-0 max-h-0 overflow-hidden">
+             <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+   We needed something affordable but still high-quality, and this turned out perfect. The visuals impressed our investors and our customers alike. I recommend it to any startup trying to look professional.
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10  rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                      <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                        
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Jason Patel</p>
+                        <p class="text-gray-400 text-xs">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 hidden-row bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300 opacity-0 max-h-0 overflow-hidden">
+              <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+                    This tool completely changed how we present our products online. In just minutes, we had visuals that looked like they were done by a professional designer. 
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                                       <img src="./src/assets/images/testimonials/pexels-gabby-k-6999225.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Rachel Donovann</p>
+                        <p class="text-gray-400 text-xs">E-commerce Store Owner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card mx-4 hidden-row bg-[#171717] rounded-2xl p-6 border border-[#323232] hover:border-emerald-400 transition-all duration-300 opacity-0 max-h-0 overflow-hidden">
+              <p class="text-gray-300 text-sm lg:text-base leading-relaxed mb-6">
+   We needed something affordable but still high-quality, and this turned out perfect. The visuals impressed our investors and our customers alike. I recommend it to any startup trying to look professional.
+                </p>
+                <div class="my-8 border-t border-[#262626]"></div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10  rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+                      <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                        
+                    </div>
+                    <div>
+                        <p class="text-white font-medium text-sm">Jason Patel</p>
+                        <p class="text-gray-400 text-xs">Startup Founder</p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Overlay Button Container -->
+        <div id="overlayContainer" class="absolute left-0 right-0 transition-all duration-500 ease-in-out bottom-0 -translate-y-4" >
+            <!-- Shadow Overlay -->
+            <div id="shadowOverlay" class="h-32 bg-gradient-to-t from-[#1e1e1e]  to-transparent transition-opacity duration-300"></div>
+            
+            <!-- Button -->
+            <div class="text-center bg-[#1e1e1e]  py-8 mb-12 md:mb-0">
+                <button id="toggleBtn" class="bg-[#1ee19b] hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-xl shadow-[#1e1e1e]">
+                    Show More
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- blog section -->
+<section class="max-w-6xl mx-auto py-16 my-20 px-4">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-6">
+        <div>
+            <p class="text-emerald-400 text-sm font-medium tracking-wide uppercase mb-4">BLOGS</p>
+            <h2 class="text-3xl md:text-5xl font-normal text-white leading-tight">
+                Your guide to <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">better</span><br>
+                product photography.
+            </h2>
+        </div>
+        
+        <button class="bg-[#1ee19b] hover:bg-emerald-600 text-black px-6 py-3 rounded-2xl font-medium transition-all duration-300 hover:scale-105 shadow-lg">
+            All Blogs
+        </button>
+    </div>
+
+    <!-- Post -->
+    <div class="my-12 bg-[#181818] rounded-2xl overflow-hidden border border-[#252525] hover:border-emerald-400 transition-all duration-500 hover:shadow-xl hover:shadow-emerald-400/10 group">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+     
+            <div class="relative overflow-hidden p-2 rounded-2xl lg:rounded-none lg:rounded-l-2xl">
+            <img src="./src/assets/images/product/pexels-igor-ovsyannykov-56123-205961.jpg" class="rounded-2xl object-cover group-hover:scale-105 transition-transform duration-300" alt="">
+                   <!--tag -->
+                <div class="absolute top-6 left-6 z-10">
+                    <span class="bg-emerald-300  text-black px-4 py-2 rounded-2xl text-sm font-medium border border-emerald-400/30">
+                        Marketing
+                    </span>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+                <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4 leading-tight ">
+                    From clicks to sales: The role of AI in visual marketing
+                </h3>
+                
+                <p class="text-gray-300 text-base lg:text-lg leading-relaxed mb-8">
+                    How product images improve customer engagement and drive conversions.
+                </p>
+
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                                     <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Alisa Hester</p>
+                        <p class="text-gray-400 text-sm">August 19, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        </div>
+            <div class="my-12 bg-[#181818] rounded-2xl overflow-hidden border border-[#252525] hover:border-emerald-400 transition-all duration-500 hover:shadow-xl hover:shadow-emerald-400/10 group">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+     
+            <div class="relative overflow-hidden p-2 rounded-2xl lg:rounded-none lg:rounded-l-2xl">
+            <img src="./src/assets/images/product/pexels-alexandra-maria-58259-336372.jpg" class="rounded-2xl object-cover  group-hover:scale-105 transition-transform duration-300" alt="">
+                   <!--tag -->
+                <div class="absolute top-6 left-6 z-10">
+                    <span class="bg-emerald-300  text-black px-4 py-2 rounded-2xl text-sm font-medium border border-emerald-400/30">
+                        Marketing
+                    </span>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+                <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4 leading-tight ">
+                    From clicks to sales: The role of AI in visual marketing
+                </h3>
+                
+                <p class="text-gray-300 text-base lg:text-lg leading-relaxed mb-8">
+                    How product images improve customer engagement and drive conversions.
+                </p>
+
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                                     <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Alisa Hester</p>
+                        <p class="text-gray-400 text-sm">August 19, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        </div>
+   
+            <div class="my-12 bg-[#181818] rounded-2xl overflow-hidden border border-[#252525] hover:border-emerald-400 transition-all duration-500 hover:shadow-xl hover:shadow-emerald-400/10 group">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+     
+            <div class="relative overflow-hidden p-2 rounded-2xl lg:rounded-none lg:rounded-l-2xl">
+            <img src="./src/assets/images/product/pexels-nietjuhart-934070.jpg" class="rounded-2xl object-cover group-hover:scale-105 transition-transform duration-300" alt="">
+                   <!--tag -->
+                <div class="absolute top-6 left-6 z-10">
+                    <span class="bg-emerald-300  text-black px-4 py-2 rounded-2xl text-sm font-medium border border-emerald-400/30">
+                        Marketing
+                    </span>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+                <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4 leading-tight ">
+                    From clicks to sales: The role of AI in visual marketing
+                </h3>
+                
+                <p class="text-gray-300 text-base lg:text-lg leading-relaxed mb-8">
+                    How product images improve customer engagement and drive conversions.
+                </p>
+
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                                     <img src="./src/assets/images/testimonials/pexels-gabby-k-5876516.jpg" alt="" srcset="" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="text-white font-medium">Alisa Hester</p>
+                        <p class="text-gray-400 text-sm">August 19, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        </div>
+   
+   
+</section>
+
+
+<section class="max-w-6xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-8 relative bg-gradient-to-br from-[#1ee19b] to-[#0d3b3bcc] rounded-3xl p-4 overflow-hidden group cursor-pointer hover:shadow-xl hover:shadow-emerald-400/12  transition-all duration-500">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight max-w-4xl md:px-8 text-left">
+          Start Creating Stunning<br>
+          Products Photos Today.
+        </h2>
+
+        
+      </div>
+      <div class=" w-full h-32 md:w-48 md:h-48  col-span-1  md:transform md:translate-x-3/4">
+          <div class="w-full h-full border-3 border-gray-900 rounded-2xl relative overflow-hidden">
+            <div class="arrow-1 absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out group-hover:translate-x-8 group-hover:-translate-y-8 group-hover:opacity-0">
+               <i class="fa-solid fa-arrow-up-long rotate-45 text-5xl"></i>
+            </div>
+            
+            <div class="arrow-2 absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out opacity-0 -translate-x-8 translate-y-8 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
+              <i class="fa-solid fa-arrow-up-long rotate-45 text-5xl"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
 
 
   </main>
+
+  <footer class="py-16 max-w-6xl mx-auto px-4">
+    <div class="">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center mb-6">
+             <div class=" flex items-center space-x-2 z-50">
+      <img src="./src/assets/images/logo/68a4543869cc1d13ded3d4e2_Logo.svg" alt="Auralis Logo" class="h-10 w-auto">
+
+    </div>
+         
+          </div>
+          
+          <p class="text-gray-400 text-base leading-relaxed max-w-xs">
+            Auralis helps brands create stunning product photos effortlessly. Powerful AI tools for startups, creators, and businesses.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium text-sm uppercase tracking-wide mb-6">WEBSITE</h3>
+          <ul class="space-y-4">
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Pricing</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">FAQ</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium text-sm uppercase tracking-wide mb-6">SOCIAL</h3>
+          <ul class="space-y-4">
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Facebook</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Instagram</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Linkedin</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Youtube</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium text-sm uppercase tracking-wide mb-6">TEMPLATE</h3>
+          <ul class="space-y-4">
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Styleguide</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Licenses</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Changelog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors duration-300">Webflow</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 my-12"></div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          © 2025 Auralis. All rights reserved.
+        </p>
+
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-[#1ee19b] rounded-lg flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110 group">
+            <i class="fab fa-facebook-f text-gray-400 group-hover:text-white transition-colors duration-300"></i>
+          </a>
+          
+          <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-[#1ee19b] rounded-lg flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110 group">
+            <i class="fab fa-instagram text-gray-400 group-hover:text-white transition-colors duration-300"></i>
+          </a>
+          
+          <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-[#1ee19b] rounded-lg flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110 group">
+            <i class="fas fa-envelope text-gray-400 group-hover:text-white transition-colors duration-300"></i>
+          </a>
+          
+          <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-[#1ee19b] rounded-lg flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110 group">
+            <i class="fab fa-linkedin-in text-gray-400 group-hover:text-white transition-colors duration-300"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="./src/main.ts"></script>
 
 
