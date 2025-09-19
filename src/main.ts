@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', function(): void {
         const isOpen = !mobileMenu?.classList.contains('-translate-y-full') && !mobileMenu?.classList.contains('opacity-0');
         
         if (isOpen) {
-            mobileMenu?.classList.add('-translate-y-full');
+            mobileMenu?.classList.add('-translate-y-0');
             mobileMenu?.classList.add('opacity-0');
             menuIcon?.classList.remove('fa-times');
             menuIcon?.classList.add('fa-bars');
             mobileDropdownMenu?.classList.add('hidden');
             mobileDropdownArrow?.classList.remove('rotate-180');
         } else {
-            mobileMenu?.classList.remove('-translate-y-full');
+            mobileMenu?.classList.remove('-translate-y-0');
             mobileMenu?.classList.remove('opacity-0');
             menuIcon?.classList.remove('fa-bars');
             menuIcon?.classList.add('fa-times');
