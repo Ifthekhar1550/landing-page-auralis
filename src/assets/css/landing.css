@@ -6,12 +6,6 @@
   font-weight:200 700;
   font-display: swap;
 }
-@font-face {
-  font-family: "Inter";
-  src: url("./src/assets/fonts/Inter-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-display: swap;
-}
 
 h1, h2, h3,h4,h5,h6{
   font-family: "ClashDisplay";
@@ -72,31 +66,40 @@ a{
         }
 
 
+.infiniteScroll {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 
- @keyframes scroll-left {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        
-        @keyframes scroll-right {
-            0% {
-                transform: translateX(-50%);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-        
-        .scroll-left {
-            animation: scroll-left 20s linear infinite;
-        }
-        
-        .scroll-right {
-            animation: scroll-right 20s linear infinite;
-        }
-        
-        
+.container {
+  display: flex;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  gap: 1rem;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.scroll-left { animation-name: scroll-left; }
+.scroll-right { animation-name: scroll-right; }
+
+.container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-brands {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.scroll-brands { animation: scroll-brands 20s linear infinite; }
+
+

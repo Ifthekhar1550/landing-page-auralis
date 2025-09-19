@@ -124,6 +124,24 @@ document.addEventListener('DOMContentLoaded', function (): void {
     });
 });
 
+//product
+document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.querySelectorAll(".container");
+
+  rows.forEach(row => {
+    const content = row.querySelector(".content") as HTMLElement;
+    if (content) {
+      const clone = content.cloneNode(true);
+      row.appendChild(clone);
+
+      const pxPerSec = 100;
+      const contentWidth = content.scrollWidth;
+      (row as HTMLElement).style.animationDuration = `${contentWidth / pxPerSec}s`;
+    }
+  });
+
+
+});
 
 
 // use case tsbs
