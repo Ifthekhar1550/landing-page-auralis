@@ -28,7 +28,7 @@ dropdownMenu.addEventListener("mouseenter", () => {
 });
 
 // mobile ham and nav
-document.addEventListener('DOMContentLoaded', function(): void {
+document.addEventListener('DOMContentLoaded', function (): void {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn') as HTMLButtonElement;
     const mobileMenu = document.getElementById('mobile-menu') as HTMLDivElement;
     const menuIcon = document.getElementById('menu-icon') as HTMLElement;
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function(): void {
     const mobileDropdownArrow = document.getElementById('mobile-dropdown-arrow') as HTMLElement;
 
     function toggleMobileMenu(): void {
-        const isOpen = !mobileMenu?.classList.contains('-translate-y-full') && !mobileMenu?.classList.contains('opacity-0');
-        
+        const isOpen = !mobileMenu?.classList.contains('-translate-y-0') && !mobileMenu?.classList.contains('opacity-0');
+
         if (isOpen) {
             mobileMenu?.classList.add('-translate-y-0');
             mobileMenu?.classList.add('opacity-0');
@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function(): void {
         toggleMobileMenu();
     });
 
-    mobileDropdownBtn?.addEventListener('click', function(e: Event): void {
+    mobileDropdownBtn?.addEventListener('click', function (e: Event): void {
         e.stopPropagation();
         const isHidden = mobileDropdownMenu?.classList.contains('hidden');
-        
+
         if (isHidden) {
             mobileDropdownMenu?.classList.remove('hidden');
             mobileDropdownArrow?.classList.add('rotate-180');
@@ -72,43 +72,47 @@ document.addEventListener('DOMContentLoaded', function(): void {
         }
     });
 
-    document.addEventListener('click', function(e: Event): void {
+    document.addEventListener('click', function (e: Event): void {
         const target = e.target as Element;
-        const isMenuOpen = !mobileMenu?.classList.contains('-translate-y-full');
-        
+        const isMenuOpen = !mobileMenu?.classList.contains('-translate-y-0');
+
         if (isMenuOpen && mobileMenu && !mobileMenu.contains(target) && !mobileMenuBtn?.contains(target)) {
             toggleMobileMenu();
         }
-        
+
         if (dropdownBtn && dropdownMenu && !dropdownBtn.contains(target) && !dropdownMenu.contains(target)) {
             clearTimeout(closeTimeout);
             dropdownMenu.classList.add('hidden');
         }
     });
 
-    window.addEventListener('resize', function(): void {
+
+    window.addEventListener('resize', function (): void {
         if (window.innerWidth >= 768) {
-            mobileMenu?.classList.add('-translate-y-full');
-            menuIcon?.classList.remove('fa-times');
-            menuIcon?.classList.add('fa-bars');
-            mobileDropdownMenu?.classList.add('hidden');
-            mobileDropdownArrow?.classList.remove('rotate-180');
+            const isMenuOpen = !mobileMenu?.classList.contains('-translate-y-0');
+            if (isMenuOpen) {
+                toggleMobileMenu();
+            } else {
+             
+                mobileDropdownMenu?.classList.add('hidden');
+                mobileDropdownArrow?.classList.remove('rotate-180');
+            }
         }
     });
 
     document.querySelectorAll('#mobile-menu a').forEach((link: Element) => {
-        link.addEventListener('click', function(): void {
+        link.addEventListener('click', function (): void {
             toggleMobileMenu();
         });
     });
 
-    mobileMenu?.addEventListener('click', function(e: Event): void {
+    mobileMenu?.addEventListener('click', function (e: Event): void {
         e.stopPropagation();
     });
 
-    document.addEventListener('keydown', function(e: KeyboardEvent): void {
+    document.addEventListener('keydown', function (e: KeyboardEvent): void {
         if (e.key === 'Escape') {
-            const isMenuOpen = !mobileMenu?.classList.contains('-translate-y-full');
+            const isMenuOpen = !mobileMenu?.classList.contains('-translate-y-0');
             if (isMenuOpen) {
                 toggleMobileMenu();
             }
@@ -119,6 +123,8 @@ document.addEventListener('DOMContentLoaded', function(): void {
         }
     });
 });
+
+
 
 // use case tsbs
 interface TabSystem {
