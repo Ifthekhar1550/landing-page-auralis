@@ -92,9 +92,7 @@ a{
 .scroll-left { animation-name: scroll-left; }
 .scroll-right { animation-name: scroll-right; }
 
-.container:hover {
-  animation-play-state: paused;
-}
+
 
 @keyframes scroll-brands {
   from { transform: translateX(0); }
