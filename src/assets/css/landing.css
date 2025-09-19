@@ -27,7 +27,7 @@ a{
 .header-gradient {
     z-index: -1;
     pointer-events: none;
-    background-image: url(../images/bg/68b813949944d0ab665874a8_Header\ Bg.webp);
+    background-image: url("../images/bg/header.webp");
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: auto;
